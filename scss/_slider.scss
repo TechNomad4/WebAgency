@@ -1,0 +1,71 @@
+.slider {
+  background: url("../../image/bgSlider.png") no-repeat;
+  background-size: 100%;
+  min-height: 700px;
+  position: relative;
+  overflow: hidden;
+
+  .navigation {
+    @include flex(flex-end, center);
+    max-width: 830px;
+    margin: 10rem auto 0 auto;
+
+    h1 {
+      color: $primaryColor;
+    }
+
+    #next,
+    #prev {
+      transform: rotate(-90deg);
+      padding: 0 70px;
+      height: 100px;
+      cursor: pointer;
+    }
+
+    #prev {
+      transform: rotate(90deg);
+    }
+  }
+
+  h3 {
+    background: #000;
+    color: #fff;
+    padding: 0 10px;
+    text-transform: uppercase;
+    transform: rotate(-5deg);
+    text-align: center;
+    margin: 3rem 5rem 3rem 0;
+  }
+
+  h2 {
+    background: $primaryColor;
+    color: #fff;
+    padding: 0 10px;
+    text-transform: uppercase;
+    transform: rotate(3deg);
+    text-align: center;
+    margin: 5rem 5rem 3rem 0;
+  }
+
+  .slide {
+    @include flex(center, center);
+    position: absolute;
+    width: 100%;
+    transition: all 1.5s ease;
+
+    .place {
+      background: url("../../image/sliderImg.png") center no-repeat;
+      background-size: 65%;
+    }
+
+    p {
+      font-size: 1.3rem;
+      max-width: 450px;
+
+      span {
+        color: $primaryColor;
+        font-weight: 900;
+      }
+    }
+  }
+}

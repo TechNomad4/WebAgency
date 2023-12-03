@@ -1,0 +1,1541 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 100vh;
+}
+header .landing {
+  background: url("../../image/bg.png") top left no-repeat;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+header .landing nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 90px 20px 0 80px;
+}
+header .landing nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+header .landing nav ul li a {
+  position: relative;
+  color: #9913e1;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 20px;
+  cursor: pointer;
+}
+header .landing nav ul li a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  right: 0;
+  background: #9913e1;
+  -webkit-transition: width 500ms ease;
+  transition: width 500ms ease;
+}
+header .landing nav ul li a:hover:after {
+  width: 100%;
+  left: 0;
+  background: #9913e1;
+}
+header .landing .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+header .landing .info img {
+  height: 350px;
+  padding: 10px 0;
+  margin-right: -20rem;
+}
+header .landing .info #place {
+  background: #000;
+  color: #fff;
+  padding: 0 10px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+header .landing .info #party {
+  background: #9913e1;
+  color: #fff;
+  padding: 0 10px;
+  margin-right: -20rem;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+header .landing .info p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  text-align: center;
+  padding: 50px 0;
+  font-weight: 500;
+}
+header .landing .info p span {
+  color: #9913e1;
+  font-weight: 900;
+}
+header #arrow {
+  float: left;
+  margin-top: -10rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  -webkit-animation: 1s arrow infinite alternate;
+          animation: 1s arrow infinite alternate;
+}
+
+@-webkit-keyframes arrow {
+  from {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@keyframes arrow {
+  from {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+.party {
+  background: #9913e1 url("../../image/bgShape.png") left bottom no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+}
+.party h1 {
+  font-size: 5rem;
+  max-width: 400px;
+  letter-spacing: 5px;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+}
+.party h1 span {
+  color: #fff;
+}
+.party p {
+  max-width: 420px;
+  line-height: 23px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 20px 0;
+}
+.party p span {
+  color: #fff;
+  font-weight: 900;
+}
+.party button {
+  text-transform: uppercase;
+  font-family: "Monda", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  background: none;
+  border: 3px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 5px 40px;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.party button:hover {
+  background-color: #e0e0e0;
+}
+.party button a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 10px 40px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.party button a:hover {
+  color: #9913e1;
+}
+
+.slider {
+  background: url("../../image/bgSlider.png") no-repeat;
+  background-size: 100%;
+  min-height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+.slider .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 830px;
+  margin: 10rem auto 0 auto;
+}
+.slider .navigation h1 {
+  color: #9913e1;
+}
+.slider .navigation #next,
+.slider .navigation #prev {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  padding: 0 70px;
+  height: 100px;
+  cursor: pointer;
+}
+.slider .navigation #prev {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.slider h3 {
+  background: #000;
+  color: #fff;
+  padding: 0 10px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  text-align: center;
+  margin: 3rem 5rem 3rem 0;
+}
+.slider h2 {
+  background: #9913e1;
+  color: #fff;
+  padding: 0 10px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+  text-align: center;
+  margin: 5rem 5rem 3rem 0;
+}
+.slider .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+.slider .slide .place {
+  background: url("../../image/sliderImg.png") center no-repeat;
+  background-size: 65%;
+}
+.slider .slide p {
+  font-size: 1.3rem;
+  max-width: 450px;
+}
+.slider .slide p span {
+  color: #9913e1;
+  font-weight: 900;
+}
+
+.tickets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.tickets #bannerAfter {
+  display: none;
+}
+.tickets .info #banner {
+  width: 100%;
+  height: 250px;
+}
+.tickets .info h1 {
+  background: url("../../image/stroke.png") bottom no-repeat;
+  font-family: "Staatliches", cursive;
+  font-size: 6rem;
+  margin: 5rem 0 3rem 60px;
+}
+.tickets .info h1 span {
+  color: #9913e1;
+}
+.tickets .info .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+}
+.tickets .info .content > div {
+  padding: 0 30px;
+}
+.tickets .info .content button {
+  text-transform: uppercase;
+  font-family: "Monda", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  background: none;
+  border: 3px solid #9913e1;
+  border-radius: 20px;
+  padding: 5px 0;
+  margin: 2rem 0;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.tickets .info .content button:hover {
+  background-color: #9913e1;
+}
+.tickets .info .content button a {
+  color: #9913e1;
+  text-decoration: none;
+  padding: 10px 40px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.tickets .info .content button a:hover {
+  color: #e0e0e0;
+}
+.tickets .info .content p {
+  font-size: 1.3rem;
+  max-width: 420px;
+}
+.tickets .info .content p span {
+  color: #9913e1;
+  font-weight: 900;
+}
+.tickets .info .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -14rem;
+  margin-top: 5rem;
+}
+.tickets .info .images * {
+  padding: 0 10px;
+  max-height: 14vw;
+}
+
+.moreInfo {
+  background: url("../../image/bgSecondSlider.png") top left no-repeat;
+  background-size: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.moreInfo img {
+  max-width: 50%;
+}
+.moreInfo > div {
+  background: url("../../image/sliderImg.png") top no-repeat;
+  background-size: 50%;
+  padding: 0 20px 0 120px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+.moreInfo > div h4 {
+  background: #000;
+  color: #fff;
+  padding: 0 10px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  text-align: center;
+  max-width: 450px;
+  margin: 0 auto;
+}
+.moreInfo > div h3 {
+  background: #9913e1;
+  color: #fff;
+  padding: 0 10px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  text-align: center;
+  margin: 1.5rem auto 3rem auto;
+  max-width: 450px;
+}
+.moreInfo > div p {
+  font-size: 1.3rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.moreInfo > div p span {
+  color: #9913e1;
+  font-weight: 900;
+}
+.moreInfo > div button {
+  display: block;
+  margin: 3rem auto 0 auto;
+  text-transform: uppercase;
+  font-family: "Monda", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  background: none;
+  border: 3px solid #9913e1;
+  border-radius: 20px;
+  padding: 5px 0;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.moreInfo > div button:hover {
+  background-color: #9913e1;
+}
+.moreInfo > div button a {
+  color: #9913e1;
+  text-decoration: none;
+  padding: 10px 40px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.moreInfo > div button a:hover {
+  color: #e0e0e0;
+}
+.moreInfo > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+}
+.moreInfo > div div img:first-child {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.moreInfo > div div img {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+.noTomorrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../../image/bgNoTomorrow.png") no-repeat;
+  background-size: 100%;
+  padding: 200px 0;
+}
+.noTomorrow h1 {
+  font-size: 5rem;
+  max-width: 400px;
+  letter-spacing: 5px;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+}
+.noTomorrow h1 span {
+  color: #9913e1;
+}
+.noTomorrow h2 {
+  background: #000;
+  color: #fff;
+  padding: 0 10px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-7deg);
+          transform: rotate(-7deg);
+  text-align: center;
+}
+.noTomorrow h3 {
+  background: #9913e1;
+  color: #fff;
+  padding: 0 10px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+  text-align: center;
+  margin: 1.5rem auto 3rem auto;
+  max-width: 450px;
+}
+.noTomorrow p {
+  font-size: 1.3rem;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+.noTomorrow p span {
+  color: #9913e1;
+  font-weight: 900;
+}
+
+.heart {
+  background: #9913e1 url("../../image/bgHeart.png") right no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.heart img {
+  max-width: 50%;
+}
+.heart div {
+  padding: 0 80px 0 50px;
+}
+.heart div img:first-child {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  margin-bottom: 2rem;
+  -webkit-animation: 1s arrowFirst infinite alternate;
+          animation: 1s arrowFirst infinite alternate;
+}
+.heart div img:nth-child(2) {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  margin-right: 5rem;
+  float: right;
+  -webkit-animation: 1s arrowSecond infinite alternate;
+          animation: 1s arrowSecond infinite alternate;
+}
+.heart div img:last-child {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+  margin: 2rem 5rem 0 0;
+  float: right;
+  -webkit-animation: 1s arrowThird infinite alternate;
+          animation: 1s arrowThird infinite alternate;
+}
+.heart div h1 {
+  font-size: 5rem;
+  max-width: 400px;
+  letter-spacing: 5px;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+  padding-bottom: 40px;
+}
+.heart div h1 span {
+  color: #fff;
+}
+.heart div p {
+  font-size: 1.3rem;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 25px;
+}
+.heart div p span {
+  color: #fff;
+  font-weight: 900;
+}
+.heart div button {
+  margin-top: 3rem;
+  text-transform: uppercase;
+  font-family: "Monda", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  background: none;
+  border: 3px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 5px 0;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.heart div button:hover {
+  background-color: #e0e0e0;
+}
+.heart div button a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 10px 40px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.heart div button a:hover {
+  color: #9913e1;
+}
+
+@-webkit-keyframes arrowFirst {
+  from {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@keyframes arrowFirst {
+  from {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+@-webkit-keyframes arrowSecond {
+  from {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+  }
+  to {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+}
+@keyframes arrowSecond {
+  from {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+  }
+  to {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+}
+@-webkit-keyframes arrowThird {
+  from {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+  }
+  to {
+    -webkit-transform: rotate(155deg);
+            transform: rotate(155deg);
+  }
+}
+@keyframes arrowThird {
+  from {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+  }
+  to {
+    -webkit-transform: rotate(155deg);
+            transform: rotate(155deg);
+  }
+}
+.performers {
+  background: url("../../image/bgPerformers.png") no-repeat;
+  background-size: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.performers .sliderPerform {
+  position: relative;
+  width: 300%;
+  margin: 10rem 0;
+  left: 0;
+  -webkit-animation: 15s slider infinite alternate;
+          animation: 15s slider infinite alternate;
+  z-index: -1;
+}
+.performers .sliderPerform div {
+  width: 33.33%;
+  float: left;
+  background: url("../../image/stroke.png") bottom no-repeat;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.performers .sliderPerform div h1 {
+  font-size: 5rem;
+  letter-spacing: 5px;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+  padding: 40px 0;
+}
+.performers .sliderPerform div h1 span {
+  color: #9913e1;
+}
+.performers .sliderPerform div p {
+  font-size: 1.3rem;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 25px;
+  margin-bottom: 5rem;
+}
+.performers .sliderPerform div p span {
+  color: #9913e1;
+  font-weight: 900;
+}
+.performers > img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  cursor: pointer;
+}
+.performers > img:last-child {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+@-webkit-keyframes slider {
+  0% {
+    left: 0;
+  }
+  30% {
+    left: 0;
+  }
+  33.33% {
+    left: -100%;
+  }
+  60% {
+    left: -100%;
+  }
+  67% {
+    left: -200%;
+  }
+  100% {
+    left: -200%;
+  }
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  30% {
+    left: 0;
+  }
+  33.33% {
+    left: -100%;
+  }
+  60% {
+    left: -100%;
+  }
+  67% {
+    left: -200%;
+  }
+  100% {
+    left: -200%;
+  }
+}
+.letter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #9913e1 url("../../image/bgLetter.png") left bottom no-repeat;
+}
+.letter div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+.letter div h1 {
+  font-size: 5rem;
+  max-width: 400px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+  padding-bottom: 10px;
+}
+.letter div h1 span {
+  color: #fff;
+}
+.letter div input,
+.letter div textarea,
+.letter div button {
+  width: 40%;
+  text-transform: uppercase;
+  font-family: "Monda", sans-serif;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  background: none;
+  color: #fff;
+  border: 3px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 5px 30px;
+  resize: none;
+  outline: none;
+}
+.letter div input::-webkit-input-placeholder, .letter div textarea::-webkit-input-placeholder, .letter div button::-webkit-input-placeholder {
+  color: #e0e0e0;
+}
+.letter div input::-moz-placeholder, .letter div textarea::-moz-placeholder, .letter div button::-moz-placeholder {
+  color: #e0e0e0;
+}
+.letter div input:-ms-input-placeholder, .letter div textarea:-ms-input-placeholder, .letter div button:-ms-input-placeholder {
+  color: #e0e0e0;
+}
+.letter div input::-ms-input-placeholder, .letter div textarea::-ms-input-placeholder, .letter div button::-ms-input-placeholder {
+  color: #e0e0e0;
+}
+.letter div input::placeholder,
+.letter div textarea::placeholder,
+.letter div button::placeholder {
+  color: #e0e0e0;
+}
+.letter div button {
+  background: #e0e0e0;
+  color: #9913e1;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.letter div button:hover {
+  background: #9913e1;
+  color: #e0e0e0;
+}
+.letter img {
+  max-width: 50%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: url("../../image/bgFooter.png") bottom no-repeat;
+  background-size: 100%;
+  min-height: 700px;
+  padding-top: 80px;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  font-size: 1.5rem;
+  margin: 5px 0;
+  cursor: pointer;
+}
+footer button {
+  text-transform: uppercase;
+  font-family: "Monda", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  background: none;
+  border: 3px solid #9913e1;
+  border-radius: 20px;
+  padding: 5px 0;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+footer button:hover {
+  background-color: #9913e1;
+}
+footer button a {
+  color: #9913e1;
+  text-decoration: none;
+  padding: 10px 40px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+footer button a:hover {
+  color: #e0e0e0;
+}
+
+@media (max-width: 1200px) {
+  header .landing nav {
+    padding: 60px 20px 0 80px;
+  }
+  header .landing nav img {
+    height: 70px;
+  }
+  header .landing nav ul li a {
+    font-size: 1.2rem;
+    margin: 0 10px;
+  }
+  header .landing .info img {
+    height: 250px;
+    margin-right: -5rem;
+  }
+  header .landing .info #place {
+    font-size: 1rem;
+  }
+  header .landing .info #party {
+    margin-right: -5rem;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  header .landing .info p {
+    max-width: 450px;
+  }
+  #arrow {
+    display: none;
+  }
+  .party {
+    background-size: 25% 35%;
+  }
+  .slider h2,
+.slider h3 {
+    font-size: 1rem;
+  }
+  .slider .slide {
+    padding-left: 30px;
+  }
+  .slider .slide p {
+    max-width: 400px;
+  }
+  .tickets {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tickets .info h1 {
+    margin: 1rem 0 1rem 60px;
+  }
+  .tickets .info .images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+  .tickets .info .images * {
+    max-height: 18vw;
+    padding: 0;
+  }
+  .tickets > img,
+.tickets #banner {
+    display: none;
+  }
+  .tickets #bannerAfter {
+    display: block;
+    max-width: 100%;
+  }
+  .moreInfo > div h3 {
+    font-size: 1rem;
+  }
+  .moreInfo > div p {
+    text-align: center;
+  }
+  .noTomorrow {
+    padding: 100px 30px;
+  }
+  .noTomorrow h1 {
+    font-size: 4rem;
+    line-height: 55px;
+  }
+  .noTomorrow h2 {
+    font-size: 1.3rem;
+  }
+  .noTomorrow p {
+    max-width: 750px;
+  }
+  .heart div h1 {
+    font-size: 4.5rem;
+    line-height: 70px;
+    padding-bottom: 20px;
+  }
+  .heart div p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .letter div input,
+.letter div textarea,
+.letter div button {
+    width: 50%;
+  }
+  footer img {
+    height: 85px;
+  }
+}
+@media screen and (max-width: 992px) {
+  header > img {
+    display: none;
+  }
+  header .landing nav {
+    padding: 60px 20px 0 60px;
+  }
+  header .landing nav ul li a {
+    font-size: 1.3rem;
+    margin: 0 9px;
+  }
+  header .landing .info img {
+    height: 330px;
+  }
+  header .landing .info #place,
+header .landing .info #party {
+    font-size: 1.5rem;
+  }
+  header .landing .info p {
+    font-size: 1.4rem;
+    max-width: 600px;
+    line-height: 35px;
+  }
+  .party {
+    padding: 50px 30px;
+  }
+  .party h1 {
+    font-size: 3.5rem;
+    line-height: 50px;
+    max-width: 300px;
+  }
+  .party p {
+    text-align: center;
+    max-width: 500px;
+    line-height: 25px;
+  }
+  .party button {
+    display: none;
+  }
+  .slider {
+    min-height: 550px;
+  }
+  .slider .navigation {
+    max-width: 600px;
+    margin: 5rem auto 0 auto;
+  }
+  .slider .slide .place {
+    background-size: 60%;
+  }
+  .slider .slide div:not(.place) {
+    display: none;
+  }
+  .slider .slide p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    text-align: center;
+  }
+  .slider h2,
+.slider h3 {
+    font-size: 1.3rem;
+  }
+  .moreInfo {
+    padding: 90px 0;
+  }
+  .moreInfo img {
+    display: none;
+  }
+  .moreInfo div {
+    padding: 0 20px 0 20px;
+  }
+  .moreInfo div h3,
+.moreInfo div h4 {
+    font-size: 1.3rem;
+    max-width: 550px;
+  }
+  .moreInfo div p {
+    font-size: 1.5rem;
+    max-width: 600px;
+  }
+  .moreInfo div button {
+    font-size: 1.5rem;
+  }
+  .noTomorrow {
+    padding: 60px 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .noTomorrow h1 {
+    font-size: 4.5rem;
+    line-height: 60px;
+    max-width: 515px;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .noTomorrow p {
+    font-size: 1.5rem;
+  }
+  .heart {
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .heart > img {
+    display: none;
+  }
+  .heart div {
+    padding: 0;
+  }
+  .heart div img:first-child {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  .heart div h1 {
+    max-width: 100%;
+  }
+  .heart div p {
+    max-width: 620px;
+  }
+  .letter {
+    padding: 20px 0;
+  }
+  .letter img {
+    display: none;
+  }
+  footer {
+    min-height: 600px;
+    padding-top: 50px;
+  }
+  footer ul li {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .landing {
+    background: url("../../image/bgHeader.png") top left no-repeat;
+  }
+  header .landing nav img {
+    height: 60px;
+  }
+  header .landing .info img {
+    height: 300px;
+  }
+  header .landing .info #place,
+header .landing .info #party {
+    font-size: 1.3rem;
+  }
+  header .landing .info p {
+    font-size: 1.4rem;
+    max-width: 500px;
+    line-height: 35px;
+  }
+  .party {
+    background-size: 35%;
+  }
+  .party h1 {
+    font-size: 4rem;
+    line-height: 60px;
+    max-width: 400px;
+    text-align: center;
+  }
+  .party p {
+    display: none;
+  }
+  .slider .navigation {
+    max-width: 400px;
+  }
+  .slider .slide {
+    padding-left: 0;
+  }
+  .slider .slide p {
+    max-width: 550px;
+  }
+  .slider h2,
+.slider h3 {
+    font-size: 1.1rem;
+  }
+  .tickets .info h1 {
+    font-size: 5rem;
+    margin: 1rem 0 1rem 30px;
+    text-align: center;
+  }
+  .tickets .info .content {
+    padding: 0;
+  }
+  .tickets .info .content div:first-child {
+    display: none;
+  }
+  .tickets .info .content p {
+    text-align: center;
+    max-width: 100%;
+  }
+  .noTomorrow {
+    padding: 40px 30px;
+  }
+  .noTomorrow h1 {
+    margin-bottom: 3rem;
+  }
+  .noTomorrow h2 {
+    font-size: 1.2rem;
+  }
+  .noTomorrow p {
+    line-height: 35px;
+  }
+  .heart div h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .performers {
+    background-size: 150%;
+  }
+  .performers .sliderPerform div {
+    padding: 0 30px;
+  }
+  footer img {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .landing nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 10px 0 60px;
+  }
+  header .landing nav img {
+    margin-bottom: 20px;
+  }
+  header .landing nav ul {
+    width: 100%;
+  }
+  header .landing nav ul li a {
+    font-size: 1.1rem;
+    margin: 0 5px;
+  }
+  header .landing .info img {
+    height: 250px;
+  }
+  header .landing .info #place,
+header .landing .info #party {
+    font-size: 1.1rem;
+  }
+  header .landing .info p {
+    font-size: 1.1rem;
+    max-width: 350px;
+    line-height: 30px;
+  }
+  .party {
+    padding: 30px;
+    background-size: 25%;
+  }
+  .slider .navigation {
+    max-width: 370px;
+  }
+  .slider .navigation #next,
+.slider .navigation #prev {
+    height: 80px;
+  }
+  .slider .slide p {
+    font-size: 1.2rem;
+    max-width: 450px;
+  }
+  .slider h3,
+.slider h2 {
+    max-width: 450px;
+    margin: 3rem auto;
+  }
+  .tickets .info h1 {
+    font-size: 4.5rem;
+    margin: 1rem 0;
+  }
+  .tickets .info .images {
+    margin-top: 1rem;
+  }
+  .moreInfo div {
+    background-size: 80%;
+  }
+  .moreInfo div h4 {
+    font-size: 1rem;
+  }
+  .moreInfo div p {
+    font-size: 1.2rem;
+    max-width: 450px;
+  }
+  .noTomorrow h2 {
+    font-size: 1rem;
+  }
+  .noTomorrow p {
+    font-size: 1.2rem;
+    max-width: 450px;
+    line-height: 30px;
+  }
+  .heart div img:first-child {
+    margin-bottom: 1rem;
+  }
+  .performers {
+    background-size: 200%;
+  }
+  .letter {
+    background-size: 20%;
+  }
+  .letter div input,
+.letter div textarea,
+.letter div button {
+    width: 60%;
+  }
+  footer {
+    min-height: 450px;
+  }
+  footer button {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    min-height: 30vh;
+  }
+  header .landing {
+    min-height: 30vh;
+    background-size: 30%;
+  }
+  header .landing nav {
+    padding: 20px 10px 0 20px;
+  }
+  header .landing nav ul {
+    width: initial;
+  }
+  header .landing nav ul li a {
+    font-size: 1rem;
+  }
+  header .landing nav img {
+    height: 45px;
+  }
+  header .landing .info img {
+    height: 180px;
+    margin-right: -1rem;
+  }
+  header .landing .info #place {
+    font-size: 0.7rem;
+  }
+  header .landing .info #party {
+    margin-right: -1rem;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+  }
+  header .landing .info p {
+    font-size: 1rem;
+    max-width: 400px;
+    line-height: 25px;
+    padding: 40px 10px;
+  }
+  .party {
+    background-size: 30%;
+  }
+  .party h1 {
+    font-size: 3rem;
+    line-height: 45px;
+  }
+  .slider {
+    min-height: 450px;
+    background-size: 200%;
+  }
+  .slider .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slider .navigation h1 {
+    font-size: 1rem;
+  }
+  .slider .navigation #next,
+.slider .navigation #prev {
+    height: 50px;
+    padding: 0 30px;
+  }
+  .slider .slide p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .slider h2,
+.slider h3 {
+    font-size: 0.8rem;
+    max-width: 300px;
+    margin: 3rem auto;
+  }
+  .slider h3 {
+    font-size: 0.7rem;
+  }
+  .tickets .info h1 {
+    background-size: 70%;
+    padding: 0 10px;
+    line-height: 65px;
+  }
+  .tickets .info .images img:not(:first-child) {
+    display: none;
+  }
+  .tickets .info .images img {
+    width: 100%;
+    max-height: 200px;
+  }
+  .moreInfo {
+    background-size: 25%;
+  }
+  .moreInfo div h3,
+.moreInfo div h4 {
+    font-size: 0.8rem;
+  }
+  .noTomorrow h1 {
+    font-size: 3rem;
+    line-height: 45px;
+  }
+  .noTomorrow h3,
+.noTomorrow h4 {
+    font-size: 0.7rem;
+  }
+  .heart {
+    background: #9913e1 url("../../image/bgHeart.png") right top no-repeat;
+    background-size: 10%;
+  }
+  .heart div h1 {
+    font-size: 3rem;
+    line-height: 45px;
+  }
+  .heart div img {
+    -webkit-animation: none !important;
+            animation: none !important;
+  }
+  .heart div img:last-child {
+    display: none;
+  }
+  .performers {
+    min-height: 70vh;
+    background-size: 210%;
+  }
+  .performers .sliderPerform div {
+    background-size: 60%;
+    margin: 1rem 0;
+  }
+  .performers .sliderPerform div h1 {
+    font-size: 3rem;
+    padding: 10px 0;
+    line-height: 50px;
+  }
+  .performers .sliderPerform div p {
+    font-size: 1rem;
+    max-width: 400px;
+    line-height: 25px;
+  }
+  .letter div h1 {
+    font-size: 3rem;
+  }
+  .letter div input,
+.letter div textarea,
+.letter div button {
+    font-size: 0.7rem;
+    padding: 5px 15px;
+  }
+  footer {
+    padding-top: 30px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e0e0;
+  font-family: "Monda", sans-serif;
+}
+
+.partyImg img {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

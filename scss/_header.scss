@@ -1,0 +1,107 @@
+header {
+  @include flex(center, flex-start);
+  min-height: 100vh;
+
+  .landing {
+    background: url("../../image/bg.png") top left no-repeat;
+    flex: 2;
+
+    nav {
+      @include flex(space-between, center);
+      padding: 90px 20px 0 80px;
+      //top right bottom left
+
+      ul {
+        @include flex(space-between, center);
+        list-style-type: none;
+
+        li a {
+          position: relative;
+          color: $primaryColor;
+          font-size: 1.5rem;
+          font-weight: 500;
+          text-decoration: none;
+          text-transform: uppercase;
+          margin: 0 20px;
+          cursor: pointer;
+
+          &:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 3px;
+            display: block;
+            right: 0;
+            background: $primaryColor;
+            transition: width 500ms ease;
+          }
+
+          &:hover:after {
+            width: 100%;
+            left: 0;
+            background: $primaryColor;
+          }
+        }
+      }
+    }
+
+    .info {
+      @include flex(center, center);
+      flex-direction: column;
+
+      img {
+        height: 350px;
+        padding: 10px 0;
+        margin-right: -20rem;
+      }
+
+      #place {
+        background: #000;
+        color: #fff;
+        padding: 0 10px;
+        text-transform: uppercase;
+        transform: rotate(-5deg);
+      }
+
+      #party {
+        background: $primaryColor;
+        color: #fff;
+        padding: 0 10px;
+        margin-right: -20rem;
+        text-transform: uppercase;
+        transform: rotate(-3deg);
+      }
+
+      p {
+        font-size: 1.3rem;
+        max-width: 600px;
+        text-align: center;
+        padding: 50px 0;
+        font-weight: 500;
+
+        span {
+          color: $primaryColor;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+
+  #arrow {
+    float: left;
+    margin-top: -10rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    animation: 1s arrow infinite alternate;
+  }
+}
+
+@keyframes arrow {
+  from {
+    transform: rotate(5deg);
+  }
+
+  to {
+    transform: rotate(-5deg);
+  }
+}

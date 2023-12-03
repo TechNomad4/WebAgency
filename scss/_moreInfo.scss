@@ -1,0 +1,93 @@
+.moreInfo {
+  background: url("../../image/bgSecondSlider.png") top left no-repeat;
+  background-size: 15%;
+  @include flex(space-between, center);
+
+  img {
+    max-width: 50%;
+  }
+
+  > div {
+    background: url("../../image/sliderImg.png") top no-repeat;
+    background-size: 50%;
+    padding: 0 20px 0 120px;
+    flex: 2;
+
+    h4 {
+      background: #000;
+      color: #fff;
+      padding: 0 10px;
+      text-transform: uppercase;
+      transform: rotate(-5deg);
+      text-align: center;
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    h3 {
+      background: $primaryColor;
+      color: #fff;
+      padding: 0 10px;
+      text-transform: uppercase;
+      transform: rotate(-2deg);
+      text-align: center;
+      margin: 1.5rem auto 3rem auto;
+      max-width: 450px;
+    }
+
+    p {
+      font-size: 1.3rem;
+      max-width: 500px;
+      margin: 0 auto;
+
+      span {
+        color: $primaryColor;
+        font-weight: 900;
+      }
+    }
+
+    button {
+      display: block;
+      margin: 3rem auto 0 auto;
+      text-transform: uppercase;
+      font-family: $primaryFont;
+      font-size: 1rem;
+      font-weight: 900;
+      background: none;
+      border: 3px solid $primaryColor;
+      border-radius: 20px;
+      padding: 5px 0;
+      cursor: pointer;
+      transition: all 1s ease;
+
+      &:hover {
+        background-color: $primaryColor;
+      }
+
+      a {
+        color: $primaryColor;
+        text-decoration: none;
+        padding: 10px 40px;
+        transition: all 1s ease;
+
+        &:hover {
+          color: $secondaryColor;
+        }
+      }
+    }
+
+    div {
+      @include flex(space-around, center);
+      padding-top: 5rem;
+
+      img:first-child {
+        transform: rotate(90deg);
+      }
+
+      img {
+        transform: rotate(-90deg);
+        cursor: pointer;
+      }
+    }
+  }
+}

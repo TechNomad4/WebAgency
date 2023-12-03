@@ -1,0 +1,35 @@
+@import "config";
+@import "header";
+@import "party";
+@import "slider";
+@import "tickets";
+@import "moreInfo";
+@import "noTomorrow";
+@import "heart";
+@import "performers";
+@import "letter";
+@import "footer";
+@import "responsive";
+
+// SLIDER
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $secondaryColor;
+  font-family: $primaryFont;
+}
+
+.partyImg {
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,118 @@
+.heart {
+  background: $primaryColor url("../../image/bgHeart.png") right no-repeat;
+  @include flex(space-between, center);
+
+  img {
+    max-width: 50%;
+  }
+
+  div {
+    // text-align: center;
+    padding: 0 80px 0 50px;
+
+    img:first-child {
+      transform: rotate(-10deg);
+      margin-bottom: 2rem;
+      animation: 1s arrowFirst infinite alternate;
+    }
+
+    img:nth-child(2) {
+      transform: rotate(20deg);
+      margin-right: 5rem;
+      float: right;
+      animation: 1s arrowSecond infinite alternate;
+    }
+
+    img:last-child {
+      transform: rotate(150deg);
+      margin: 2rem 5rem 0 0;
+      float: right;
+      animation: 1s arrowThird infinite alternate;
+    }
+
+    h1 {
+      font-size: 5rem;
+      max-width: 400px;
+      letter-spacing: 5px;
+      line-height: 80px;
+      text-transform: uppercase;
+      font-family: $secondaryFont;
+      padding-bottom: 40px;
+
+      span {
+        color: #fff;
+      }
+    }
+
+    p {
+      font-size: 1.3rem;
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 25px;
+
+      span {
+        color: #fff;
+        font-weight: 900;
+      }
+    }
+
+    button {
+      margin-top: 3rem;
+      text-transform: uppercase;
+      font-family: $primaryFont;
+      font-size: 1rem;
+      font-weight: 900;
+      background: none;
+      border: 3px solid $secondaryColor;
+      border-radius: 20px;
+      padding: 5px 0;
+      cursor: pointer;
+      transition: all 1s ease;
+
+      &:hover {
+        background-color: $secondaryColor;
+      }
+
+      a {
+        color: $secondaryColor;
+        text-decoration: none;
+        padding: 10px 40px;
+        transition: all 1s ease;
+
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+
+@keyframes arrowFirst {
+  from {
+    transform: rotate(5deg);
+  }
+
+  to {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes arrowSecond {
+  from {
+    transform: rotate(35deg);
+  }
+
+  to {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes arrowThird {
+  from {
+    transform: rotate(160deg);
+  }
+
+  to {
+    transform: rotate(155deg);
+  }
+}

@@ -1,0 +1,780 @@
+@include mediaLarge {
+  header {
+    .landing {
+      nav {
+        padding: 60px 20px 0 80px;
+
+        img {
+          height: 70px;
+        }
+
+        ul {
+          li a {
+            font-size: 1.2rem;
+            margin: 0 10px;
+          }
+        }
+      }
+
+      .info {
+        img {
+          height: 250px;
+          margin-right: -5rem;
+        }
+
+        #place {
+          font-size: 1rem;
+        }
+
+        #party {
+          margin-right: -5rem;
+          transform: rotate(-5deg);
+        }
+
+        p {
+          max-width: 450px;
+        }
+      }
+    }
+  }
+
+  #arrow {
+    display: none;
+  }
+
+  .party {
+    background-size: 25% 35%;
+  }
+
+  .slider {
+    h2,
+    h3 {
+      font-size: 1rem;
+    }
+
+    .slide {
+      padding-left: 30px;
+
+      p {
+        max-width: 400px;
+      }
+    }
+  }
+
+  .tickets {
+    flex-direction: column;
+
+    .info {
+      h1 {
+        margin: 1rem 0 1rem 60px;
+      }
+
+      .images {
+        @include flex(space-between, center);
+        margin-top: 3rem;
+        margin-left: 0;
+
+        * {
+          max-height: 18vw;
+          padding: 0;
+        }
+      }
+    }
+
+    > img,
+    #banner {
+      display: none;
+    }
+
+    #bannerAfter {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  .moreInfo {
+    > div {
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .noTomorrow {
+    padding: 100px 30px;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 55px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      max-width: 750px;
+    }
+  }
+
+  .heart {
+    div {
+      h1 {
+        font-size: 4.5rem;
+        line-height: 70px;
+        padding-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .letter {
+    div {
+      input,
+      textarea,
+      button {
+        width: 50%;
+      }
+    }
+  }
+
+  footer img {
+    height: 85px;
+  }
+}
+
+@include mediaMediumLarge {
+  header {
+    > img {
+      display: none;
+    }
+
+    .landing {
+      nav {
+        padding: 60px 20px 0 60px;
+
+        ul li a {
+          font-size: 1.3rem;
+          margin: 0 9px;
+        }
+      }
+
+      .info {
+        img {
+          height: 330px;
+        }
+
+        #place,
+        #party {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          max-width: 600px;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+
+  .party {
+    padding: 50px 30px;
+
+    h1 {
+      font-size: 3.5rem;
+      line-height: 50px;
+      max-width: 300px;
+    }
+
+    p {
+      text-align: center;
+      max-width: 500px;
+      line-height: 25px;
+      // padding: 20px 0;
+    }
+
+    button {
+      display: none;
+    }
+  }
+
+  .slider {
+    min-height: 550px;
+
+    .navigation {
+      max-width: 600px;
+      margin: 5rem auto 0 auto;
+    }
+
+    .slide {
+      .place {
+        background-size: 60%;
+      }
+
+      div:not(.place) {
+        display: none;
+      }
+
+      p {
+        font-size: 1.5rem;
+        max-width: 600px;
+        text-align: center;
+      }
+    }
+
+    h2,
+    h3 {
+      font-size: 1.3rem;
+    }
+  }
+
+  .moreInfo {
+    padding: 90px 0;
+
+    img {
+      display: none;
+    }
+
+    div {
+      padding: 0 20px 0 20px;
+
+      h3,
+      h4 {
+        font-size: 1.3rem;
+        max-width: 550px;
+      }
+
+      p {
+        font-size: 1.5rem;
+        max-width: 600px;
+      }
+
+      button {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .noTomorrow {
+    padding: 60px 30px;
+    flex-direction: column;
+
+    h1 {
+      font-size: 4.5rem;
+      line-height: 60px;
+      max-width: 515px;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .heart {
+    padding: 30px;
+    @include flex(center, center);
+
+    > img {
+      display: none;
+    }
+
+    div {
+      padding: 0;
+
+      img:first-child {
+        transform: rotate(-20deg);
+      }
+
+      h1 {
+        max-width: 100%;
+      }
+
+      p {
+        max-width: 620px;
+      }
+    }
+  }
+
+  .letter {
+    padding: 20px 0;
+
+    img {
+      display: none;
+    }
+  }
+
+  footer {
+    min-height: 600px;
+    padding-top: 50px;
+
+    ul li {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@include mediaMedium {
+  header {
+    .landing {
+      background: url("../../image/bgHeader.png") top left no-repeat;
+
+      nav img {
+        height: 60px;
+      }
+
+      .info {
+        img {
+          height: 300px;
+        }
+
+        #place,
+        #party {
+          font-size: 1.3rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          max-width: 500px;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+
+  .party {
+    background-size: 35%;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 60px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    p {
+      display: none;
+    }
+  }
+
+  .slider {
+    .navigation {
+      max-width: 400px;
+    }
+
+    .slide {
+      padding-left: 0;
+
+      p {
+        max-width: 550px;
+      }
+    }
+
+    h2,
+    h3 {
+      font-size: 1.1rem;
+    }
+  }
+
+  .tickets {
+    .info {
+      h1 {
+        font-size: 5rem;
+        margin: 1rem 0 1rem 30px;
+        text-align: center;
+      }
+
+      .content {
+        padding: 0;
+
+        div {
+          &:first-child {
+            display: none;
+          }
+        }
+
+        p {
+          text-align: center;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .noTomorrow {
+    padding: 40px 30px;
+
+    h1 {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      line-height: 35px;
+    }
+  }
+
+  .heart div h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .performers {
+    background-size: 150%;
+    .sliderPerform div {
+      padding: 0 30px;
+    }
+  }
+
+  footer img {
+    display: none;
+  }
+}
+
+@include mediaMediumLow {
+  header {
+    .landing {
+      nav {
+        flex-direction: column;
+        padding: 20px 10px 0 60px;
+
+        img {
+          margin-bottom: 20px;
+        }
+
+        ul {
+          width: 100%;
+
+          li a {
+            font-size: 1.1rem;
+            margin: 0 5px;
+          }
+        }
+      }
+
+      .info {
+        img {
+          height: 250px;
+        }
+
+        #place,
+        #party {
+          font-size: 1.1rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          max-width: 350px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .party {
+    padding: 30px;
+    background-size: 25%;
+  }
+
+  .slider {
+    .navigation {
+      max-width: 370px;
+
+      #next,
+      #prev {
+        height: 80px;
+      }
+    }
+
+    .slide {
+      p {
+        font-size: 1.2rem;
+        max-width: 450px;
+      }
+    }
+
+    h3,
+    h2 {
+      max-width: 450px;
+      margin: 3rem auto;
+    }
+  }
+
+  .tickets {
+    .info {
+      h1 {
+        font-size: 4.5rem;
+        margin: 1rem 0;
+      }
+
+      .images {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .moreInfo div {
+    background-size: 80%;
+
+    h4 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 450px;
+    }
+  }
+
+  .noTomorrow {
+    h2 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 450px;
+      line-height: 30px;
+    }
+  }
+
+  .heart div img:first-child {
+    margin-bottom: 1rem;
+  }
+
+  .performers {
+    background-size: 200%;
+  }
+
+  .letter {
+    background-size: 20%;
+
+    div {
+      input,
+      textarea,
+      button {
+        width: 60%;
+      }
+    }
+  }
+
+  footer {
+    min-height: 450px;
+    button {
+      display: none;
+    }
+  }
+}
+
+@include mediaSmall {
+  header {
+    min-height: 30vh;
+
+    .landing {
+      min-height: 30vh;
+      background-size: 30%;
+
+      nav {
+        padding: 20px 10px 0 20px;
+
+        ul {
+          width: initial;
+
+          li a {
+            font-size: 1rem;
+          }
+        }
+
+        img {
+          height: 45px;
+        }
+      }
+
+      .info {
+        img {
+          height: 180px;
+          margin-right: -1rem;
+        }
+
+        #place {
+          font-size: 0.7rem;
+        }
+
+        #party {
+          margin-right: -1rem;
+          font-size: 0.8rem;
+          margin: 0.5rem 0;
+        }
+
+        p {
+          font-size: 1rem;
+          max-width: 400px;
+          line-height: 25px;
+          padding: 40px 10px;
+        }
+      }
+    }
+  }
+
+  .party {
+    background-size: 30%;
+
+    h1 {
+      font-size: 3rem;
+      line-height: 45px;
+    }
+  }
+
+  .slider {
+    min-height: 450px;
+    background-size: 200%;
+
+    .navigation {
+      @include flex(center, center);
+
+      h1 {
+        font-size: 1rem;
+      }
+
+      #next,
+      #prev {
+        height: 50px;
+        padding: 0 30px;
+      }
+    }
+
+    .slide {
+      p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+    }
+
+    h2,
+    h3 {
+      font-size: 0.8rem;
+      max-width: 300px;
+      margin: 3rem auto;
+    }
+
+    h3 {
+      font-size: 0.7rem;
+    }
+  }
+
+  .tickets {
+    .info {
+      h1 {
+        background-size: 70%;
+        padding: 0 10px;
+        line-height: 65px;
+      }
+
+      .images {
+        img:not(:first-child) {
+          display: none;
+        }
+
+        img {
+          width: 100%;
+          max-height: 200px;
+        }
+      }
+    }
+  }
+
+  .moreInfo {
+    background-size: 25%;
+    div {
+      h3,
+      h4 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .noTomorrow {
+    h1 {
+      font-size: 3rem;
+      line-height: 45px;
+    }
+
+    h3,
+    h4 {
+      font-size: 0.7rem;
+    }
+  }
+
+  .heart {
+    background: #9913e1 url("../../image/bgHeart.png") right top no-repeat;
+    background-size: 10%;
+    div {
+      h1 {
+        font-size: 3rem;
+        line-height: 45px;
+      }
+
+      img {
+        animation: none !important;
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .performers {
+    min-height: 70vh;
+    background-size: 210%;
+
+    .sliderPerform div {
+      background-size: 60%;
+      margin: 1rem 0;
+
+      h1 {
+        font-size: 3rem;
+        padding: 10px 0;
+        line-height: 50px;
+      }
+
+      p {
+        font-size: 1rem;
+        max-width: 400px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .letter {
+    div {
+      h1 {
+        font-size: 3rem;
+      }
+
+      input,
+      textarea,
+      button {
+        font-size: 0.7rem;
+        padding: 5px 15px;
+      }
+    }
+  }
+
+  footer {
+    padding-top: 30px;
+  }
+}

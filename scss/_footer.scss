@@ -1,0 +1,45 @@
+footer {
+  @include flex(space-evenly, flex-start);
+  background: url("../../image/bgFooter.png") bottom no-repeat;
+  background-size: 100%;
+  min-height: 700px;
+  padding-top: 80px;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      font-size: 1.5rem;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+  }
+
+  button {
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    font-size: 1rem;
+    font-weight: 900;
+    background: none;
+    border: 3px solid $primaryColor;
+    border-radius: 20px;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: all 1s ease;
+
+    &:hover {
+      background-color: $primaryColor;
+    }
+
+    a {
+      color: $primaryColor;
+      text-decoration: none;
+      padding: 10px 40px;
+      transition: all 1s ease;
+
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+}

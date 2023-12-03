@@ -1,0 +1,59 @@
+.party {
+  background: $primaryColor url("../../image/bgShape.png") left bottom no-repeat;
+  @include flex(center, center);
+  padding: 50px 0;
+
+  h1 {
+    font-size: 5rem;
+    max-width: 400px;
+    letter-spacing: 5px;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-family: $secondaryFont;
+
+    span {
+      color: #fff;
+    }
+  }
+
+  p {
+    max-width: 420px;
+    line-height: 23px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 0;
+
+    span {
+      color: #fff;
+      font-weight: 900;
+    }
+  }
+
+  button {
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    font-size: 1rem;
+    font-weight: 900;
+    background: none;
+    border: 3px solid $secondaryColor;
+    border-radius: 20px;
+    padding: 5px 40px;
+    cursor: pointer;
+    transition: all 1s ease;
+
+    &:hover {
+      background-color: $secondaryColor;
+    }
+
+    a {
+      color: $secondaryColor;
+      text-decoration: none;
+      padding: 10px 40px;
+      transition: all 1s ease;
+
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+}

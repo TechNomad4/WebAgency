@@ -1,0 +1,51 @@
+.noTomorrow {
+  @include flex(space-evenly, center);
+  background: url("../../image/bgNoTomorrow.png") no-repeat;
+  background-size: 100%;
+  padding: 200px 0;
+
+  h1 {
+    font-size: 5rem;
+    max-width: 400px;
+    letter-spacing: 5px;
+    line-height: 80px;
+    text-transform: uppercase;
+    font-family: $secondaryFont;
+
+    span {
+      color: $primaryColor;
+    }
+  }
+
+  h2 {
+    background: #000;
+    color: #fff;
+    padding: 0 10px;
+    text-transform: uppercase;
+    transform: rotate(-7deg);
+    text-align: center;
+  }
+
+  h3 {
+    background: $primaryColor;
+    color: #fff;
+    padding: 0 10px;
+    text-transform: uppercase;
+    transform: rotate(-4deg);
+    text-align: center;
+    margin: 1.5rem auto 3rem auto;
+    max-width: 450px;
+  }
+
+  p {
+    font-size: 1.3rem;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+
+    span {
+      color: $primaryColor;
+      font-weight: 900;
+    }
+  }
+}

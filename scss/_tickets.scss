@@ -1,0 +1,85 @@
+.tickets {
+  @include flex(flex-start, flex-start);
+
+  #bannerAfter {
+    display: none;
+  }
+
+  .info {
+    #banner {
+      width: 100%;
+      height: 250px;
+    }
+
+    h1 {
+      background: url("../../image/stroke.png") bottom no-repeat;
+      font-family: $secondaryFont;
+      font-size: 6rem;
+      margin: 5rem 0 3rem 60px;
+
+      span {
+        color: $primaryColor;
+      }
+    }
+
+    .content {
+      @include flex(space-between, center);
+      padding-left: 30px;
+
+      > div {
+        padding: 0 30px;
+      }
+
+      button {
+        text-transform: uppercase;
+        font-family: $primaryFont;
+        font-size: 1rem;
+        font-weight: 900;
+        background: none;
+        border: 3px solid $primaryColor;
+        border-radius: 20px;
+        padding: 5px 0;
+        margin: 2rem 0;
+        cursor: pointer;
+        transition: all 1s ease;
+
+        &:hover {
+          background-color: $primaryColor;
+        }
+
+        a {
+          color: $primaryColor;
+          text-decoration: none;
+          padding: 10px 40px;
+          transition: all 1s ease;
+
+          &:hover {
+            color: $secondaryColor;
+          }
+        }
+      }
+
+      p {
+        font-size: 1.3rem;
+        max-width: 420px;
+
+        span {
+          color: $primaryColor;
+          font-weight: 900;
+        }
+      }
+    }
+
+    .images {
+      @include flex(center, center);
+      margin-left: -14rem;
+      margin-top: 5rem;
+
+      * {
+        padding: 0 10px;
+        // max-width: 33.333%;
+        max-height: 14vw;
+      }
+    }
+  }
+}
